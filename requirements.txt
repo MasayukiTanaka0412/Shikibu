@@ -1,0 +1,6 @@
+# SpeechRecognition
+# use below instead as Azure Speech is not yet supported on PyPu
+# python -m pip install git+https://github.com/Uberi/speech_recognition.git
+
+# pyinstaller shikibu.py --onefile
+pyinstaller
