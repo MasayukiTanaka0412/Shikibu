@@ -135,3 +135,4 @@ venv/
 setapikey.bat
 
 launch.json
+*.wav
