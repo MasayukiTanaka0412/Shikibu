@@ -4,7 +4,7 @@
   
 Audio Transcriber Tool
   
-## 環境設定
+## 環境設定 Environment Setup
 
 [Azure Speech to Text](https://azure.microsoft.com/ja-jp/services/cognitive-services/speech-to-text/)のインスタンスを作成しkeyをAZURE_SPEECH_KEYとして環境変数に設定します
   
@@ -18,4 +18,14 @@ Change file format into .wav
 
 ex.
   
-ffmpeg -i input.mp4 -ar 8000 output.wav
+ffmpeg -i input.mp4 -ar 16000 output.wav
+  
+## 実行 Execution
+  
+dist/runShikubu.bat にwavファイルをドラッグアンドドロップ
+  
+適宜標準出力をリダイレクトしてファイルに保存してください
+  
+Drag & drop .wav file onto dist/runShikubu.bat
+  
+Redirect stdout into file to save the result
