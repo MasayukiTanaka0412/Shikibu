@@ -21,11 +21,12 @@ ex.
 ffmpeg -i input.mp4 -ar 16000 output.wav
   
 ## 実行 Execution
+
+wavファイルをdistディレクトリに配置
+
+place wav file into dist directory 
   
 dist/runShikubu.bat にwavファイルをドラッグアンドドロップ
   
-適宜標準出力をリダイレクトしてファイルに保存してください
-  
 Drag & drop .wav file onto dist/runShikubu.bat
   
-Redirect stdout into file to save the result
