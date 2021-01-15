@@ -22,11 +22,19 @@ ffmpeg -i input.mp4 -ar 16000 output.wav
   
 ## 実行 Execution
 
-wavファイルをdistディレクトリに配置
+wav,aiff,flacファイルをdistディレクトリに配置
 
-place wav file into dist directory 
+place wav,aiff,flac file into dist directory 
   
 dist/runShikubu.bat にwavファイルをドラッグアンドドロップ
   
 Drag & drop .wav file onto dist/runShikubu.bat
+  
+日本語以外の言語を書き起こす場合は、batファイル中の 
+  
+.\shikibu.exe %1 ja-JP > %1.txt
+  
+ja-JPを適宜変更してください
+  
+If you want to transcribe the language other than Japanese, please change ja-JP in the bat file accordingly
   

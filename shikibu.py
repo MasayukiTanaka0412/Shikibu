@@ -1,6 +1,7 @@
 import speech_recognition as sr
 import os
 import sys
+import datetime
 
 AUDIO_FILE = sys.argv[1]
 LANGUAGE = sys.argv[2]
@@ -19,7 +20,7 @@ print("Recognition Result")
 with sr.AudioFile(AUDIO_FILE) as source:
     while offset < source.DURATION:
         audio = r.record(source,duration=60) # read the entire audio file
-        print("from {} sec to {} sec".format(offset, offset +60))
+        print("{} - {} ".format(datetime.timedelta(seconds=offset), datetime.timedelta(seconds=offset +60)))
         offset = offset + 60
         try:
             result = r.recognize_azure(audio, key=AZURE_SPEECH_KEY,location="japaneast",language=LANGUAGE,show_all=False,result_format="simple",profanity="raw")
