@@ -4,3 +4,5 @@
 
 # pyinstaller shikibu.py --onefile
 pyinstaller
+
+google-api-python-client
