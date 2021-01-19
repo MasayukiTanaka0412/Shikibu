@@ -6,3 +6,11 @@
 pyinstaller
 
 google-api-python-client
+google-cloud-speech
+httplib2
+oauth2client
+pyasn1
+pyasn1-modules
+rsa
+six
+ntpl

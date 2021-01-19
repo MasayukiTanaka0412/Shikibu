@@ -133,7 +133,9 @@ venv/
 
 # Key
 setapikey.bat
+setGoogleAPIkey.bat
 
 launch.json
 *.wav
-runShikibuLocal.bat
+runShikibu*Local*.bat
+*.wav.txt
